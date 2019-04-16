@@ -13,10 +13,15 @@ function Ticket(props){
         div {
           background-color: red;
         }
+        h1{
+          font-family: 'Monoton', cursive;
+          color: gold;
+
+        }
       `}</style>
+      <h1>Portland</h1>
       <h3>{props.location} - {props.names}</h3>
       <p><em>{props.issue}</em></p>
-      <hr/>
     </div>
   );
 }
