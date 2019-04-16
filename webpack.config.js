@@ -42,6 +42,18 @@ module.exports = {
         }
       },
       {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'assets/img'
+            }
+          }
+        ]
+      },
+      {
         test: /\.jsx?$/,
         enforce: "pre",
         loader: "eslint-loader",

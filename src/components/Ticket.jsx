@@ -2,34 +2,34 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Ticket(props){
-  let ticketStyles = {
-    // backgroundColor: '#eee',
-    fontFamily: 'sans-serif',
-    paddingTop: '25x'
+
+  let locationStyles = {
+    textTransform: 'uppercase'
   };
   return (
-    <div style={ticketStyles}>
+    <div>
       <style jsx>{`
         div {
           background-color: red;
+          font-family: Allerta;
         }
         h1{
           font-family: 'Monoton', cursive;
           color: gold;
-
         }
+
       `}</style>
-      <h1>Portland</h1>
-      <h3>{props.location} - {props.names}</h3>
-      <p><em>{props.issue}</em></p>
+      <h3 style={locationStyles}>{props.location}</h3>
+      <h4>{props.address}</h4>
+      <p>{props.hours}</p>
     </div>
   );
 }
 
 Ticket.propTypes = {
-  names: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
-  issue: PropTypes.string
+  address: PropTypes.string.isRequired,
+  hours: PropTypes.string
 };
 
 export default Ticket;

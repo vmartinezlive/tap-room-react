@@ -8,8 +8,9 @@ function Links() {
       <style jsx>{`
 					div {
 						display:flex;
-						justfy-content: flex-end;
+						justify-content: flex-end;
 						text-align: center;
+            flex-flow: row wrap;
 					}
 					a{
             display: flex;
