@@ -14,6 +14,7 @@ function DisplayProduce(){
           grid-template-columns: repeat(3, 1fr);
           grid-gap: 1%;
           max-width:99vw;
+          overflow:hidden;
         }
         `}
       </style>

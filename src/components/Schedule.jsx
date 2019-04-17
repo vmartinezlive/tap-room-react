@@ -19,7 +19,6 @@ function Schedule(props){
       <h3 style={locationStyles}>{props.day}</h3>
       <h4>{props.location}</h4>
       <p>{props.hours}</p>
-      <p>{props.booth}</p>
     </div>
   );
 }
@@ -27,8 +26,7 @@ function Schedule(props){
 Schedule.propTypes = {
   day: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
-  hours: PropTypes.string.isRequired,
-  booth: PropTypes.string
+  hours: PropTypes.string.isRequired
 };
 
 export default Schedule;

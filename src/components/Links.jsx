@@ -1,17 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const linkStyle = {
-  display: 'flex',
-  justifyContent: 'flex-end',
-  flexFlow: 'column wrap',
-  width: '7rem',
-  textDecoration: 'none',
-  fontFamily: "'Allerta', sans-serif",
-  paddingLeft: '1rem',
-  color: '#FFF',
-  fontSize: '1rem'
-}
 function Links() {
 
 
@@ -35,6 +24,8 @@ function Links() {
             padding-left: 1rem;
             color: #FFF;
             font-size: 1rem;
+            list-style: none;
+
 					}
           h1{
             font-family: 'Monoton', cursive;
@@ -47,13 +38,17 @@ function Links() {
           }
 
 				`}</style>
-      <Link to="/" style={linkStyle}>#Home</Link >
-      <a href="#">#Snack Fest</a>      
-      <Link to="/displayproduce" style={linkStyle}>#Produce</Link>
+      <Link to="/" style={{ textDecoration: 'none' }}>
+        <a>#Home</a>
+      </Link>
+      <a href="#">#Snack Fest</a>
+      <Link to="/displayproduce" style={{ textDecoration: 'none' }}>
+        <a>#Produce</a>
+      </Link>
       <a href="#">#FAQ </a>
       <a href="#">#Apply</a>
       <a href="#">#Vendors </a>
-      <a href="#">#Map </a>
+      <a href="#">#Map</a>
 
 
     </div>

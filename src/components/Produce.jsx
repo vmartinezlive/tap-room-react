@@ -9,12 +9,13 @@ function Produce(props){
     <div>
       <style jsx>{`
         div {
-          border: 1px dotted white;
           text-align: center;
           font-family: Allerta;
           max-width: 100vw;
           // max-height:105vh;
-
+          // max-height:80vh;
+          overflow:hidden;
+          border: 1px dotted gold;
         }
         h3{
           text-align:center;
@@ -31,14 +32,14 @@ function Produce(props){
           // background-color: red;
           justify-content: center;
           margin: 10px 35px 0 0;
-          border: 1px solid white;
+          border: none;
         }
 
         `}
       </style>
       <h3>{props.month}</h3>
       <div className='divStyles'>
-        <ul>
+        <ul >
           {
             props.selection.map((produce,i)=>{
               return <p key={i}>{produce}</p>;

@@ -34,7 +34,7 @@ function App(){
         <Route exact path ='/' component={Body} />
         <Route exact path ='/displayproduce' component={DisplayProduce} />
       </Switch>
-
+      <Footer/>
     </div>
   );
 }
