@@ -10,7 +10,8 @@ function Ticket(props){
     <div>
       <style jsx>{`
         div {
-          background-color: red;
+          border: 1px dotted yellow;
+          text-align: center;
           font-family: Allerta;
         }
         h1{
@@ -19,17 +20,19 @@ function Ticket(props){
         }
 
       `}</style>
-      <h3 style={locationStyles}>{props.location}</h3>
-      <h4>{props.address}</h4>
+      <h3 style={locationStyles}>{props.day}</h3>
+      <h4>{props.location}</h4>
       <p>{props.hours}</p>
+      <p>{props.booth}</p>
     </div>
   );
 }
 
 Ticket.propTypes = {
+  day: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
-  address: PropTypes.string.isRequired,
-  hours: PropTypes.string
+  hours: PropTypes.string.isRequired,
+  booth: PropTypes.string
 };
 
 export default Ticket;

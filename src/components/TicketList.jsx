@@ -1,41 +1,45 @@
 import React from 'react';
 import Ticket from './Ticket';
+// import MarketSchedule from '../model/MarketSchedule.js';
 
-var masterTicketList = [
+const MarketSchedule = [
   {
-    location:'Portland State University',
-    address: 'SW Park & Montgomery',
-    hours:'9:00am to 2:00pm (Nov-March). Spring/Summer Hours - *;30am to 2:00pm (April-Oct)'
+    day: 'Sunday',
+    location: 'Lents International',
+    hours: '9:00am - 2:00pm',
+    booth: '4A'
   },
   {
-    location:'Lents International',
-    address: 'SE 92nd & Reedway',
-    hours:'Opens in June'
+    day: 'Monday',
+    location: 'Pioneer Courthouse Square',
+    hours: '10:00am - 2:00pm',
+    booth: '7C'
   },
   {
-    location:'King',
-    address: 'NE 7th and Wygant',
-    hours:'Opens in May'
+    day: 'Tuesday',
+    location: 'Hillsboro',
+    hours: '5:00pm - 8:30pm',
+    booth: '1F'
   },
   {
-    location:'Kenton',
-    address: 'N Denver & McClellan',
-    hours:'Opens in June'
+    day: 'Wednesday',
+    location: 'Shemanski Park',
+    hours: '10:00am - 2:00pm',
+    booth: '3E'
   },
   {
-    location:'Shemanski Park',
-    address: 'SW Park & Main',
-    hours:'Opens in May'
+    day: 'Thursday',
+    location: 'Northwest Portland',
+    hours: '2:00pm - 6:00pm',
+    booth: '6D'
   },
   {
-    location:'Shemanski Park',
-    address: 'SW Park & Main',
-    hours:'Opens in May'
-  },
-
-
+    day: 'Saturday',
+    location: 'Beaverton',
+    hours: '10:00am - 1:30pm',
+    booth: '9G'
+  }
 ];
-
 function TicketList(){
   return (
     <div>
@@ -50,10 +54,11 @@ function TicketList(){
       `}
 
       </style>
-      {masterTicketList.map((ticket, index) =>
-        <Ticket location={ticket.location}
-          address={ticket.address}
+      {MarketSchedule.map((ticket, index) =>
+        <Ticket day={ticket.day}
+          location={ticket.location}
           hours={ticket.hours}
+          booth={ticket.booth}
           key={index}/>
       )}
     </div>
