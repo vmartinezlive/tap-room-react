@@ -3,8 +3,8 @@ import Produce from './Produce';
 import availableProduce from '../model/seasonalProduce.js';
 
 
+// console.log(availableProduce);
 function DisplayProduce(){
-  console.log(availableProduce);
   return(
     <div>
       <style jsx>{`

@@ -29,6 +29,9 @@ function Links() {
             color: gold;
 
           }
+          a:hover{
+            color: #42e8de;
+          }
 				`}</style>
       <a href="#">#Home </a>
       <a href="#">#Snack Fest</a>
