@@ -18,21 +18,16 @@ function Produce(props){
         li {
           text-decorator: none;
           list-style-type: none;
-        
-
         }
-
-
-
-        `}
+      `}
       </style>
       <h3>{props.month}</h3>
       <ul>
-      {
-       props.selection.map((produce,i)=>{
-       return <li key={i}>{produce}</li>
-       })
-     }
+        {
+          props.selection.map((produce,i)=>{
+            return <li key={i}>{produce}</li>;
+          })
+        }
       </ul>
     </div>
   );

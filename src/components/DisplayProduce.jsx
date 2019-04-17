@@ -4,7 +4,6 @@ import availableProduce from '../model/seasonalProduce.js';
 
 
 function DisplayProduce(){
-  console.log(availableProduce);
   return(
     <div>
       <style jsx>{`

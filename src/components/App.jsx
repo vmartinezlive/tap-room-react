@@ -12,7 +12,7 @@ library.add(faStroopwafel);
 // import Ticket from './Links';
 
 
-// import { Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 // import Error404 from './Error404';
 
 function App(){
@@ -27,7 +27,9 @@ function App(){
           }
         `}</style>
       <Header/>
-      <Body/>
+      <Switch>
+        <Route exact path ='/' component={Body} />
+      </Switch>
     </div>
   );
 }
