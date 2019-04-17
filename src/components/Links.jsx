@@ -8,20 +8,21 @@ function Links() {
       <style jsx>{`
 					div {
 						display:flex;
-						justify-content: flex-end;
+						justify-content: flex-start;
 						text-align: center;
             flex-flow: row wrap;
-					}
+            margin-top: 2rem;
+        	}
 					a{
             display: flex;
             justify-content: flex-end;
             flex-flow:column wrap;
-						width: 5rem;
+						width: 7rem;
             text-decoration: none;
             font-family: 'Allerta', sans-serif;
-            padding-left: 15px;
+            padding-left: 1rem;
             color: #FFF;
-            font-size: 13px;
+            font-size: 1rem;
 					}
           h1{
             font-family: 'Monoton', cursive;

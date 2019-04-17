@@ -12,6 +12,8 @@ function Header(){
           font:100px/.5em monoton;
           color: #FCFD46;
           text-transform:uppercase;
+          margin-left: 2rem;
+
         }
         .portland {
           display: flex;
@@ -37,8 +39,6 @@ function Header(){
           margin-top: -2px;
           font-size: 2.2rem;
         }
-
-
      `}</style>
       <Links/>
       <Icon/>
