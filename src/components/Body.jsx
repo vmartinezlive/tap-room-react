@@ -1,5 +1,6 @@
 import React from 'react';
 import DisplaySchedule from './DisplaySchedule';
+import DisplayProduce from './DisplayProduce';
 import Img from './Img';
 
 function Body(){
@@ -14,6 +15,7 @@ function Body(){
 
       <Img/>
       <DisplaySchedule/>
+      <DisplayProduce/>
     </div>
   );
 }
