@@ -1,5 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
+const linkStyle = {
+  display: 'flex',
+  justifyContent: 'flex-end',
+  flexFlow: 'column wrap',
+  width: '7rem',
+  textDecoration: 'none',
+  fontFamily: "'Allerta', sans-serif",
+  paddingLeft: '1rem',
+  color: '#FFF',
+  fontSize: '1rem'
+}
 function Links() {
 
 
@@ -13,7 +25,7 @@ function Links() {
             flex-flow: row wrap;
             margin-top: 2rem;
         	}
-					a{
+					a {
             display: flex;
             justify-content: flex-end;
             flex-flow:column wrap;
@@ -29,9 +41,11 @@ function Links() {
             color: gold;
 
           }
+
 				`}</style>
-      <a href="#">#Home </a>
-      <a href="#">#Snack Fest</a>
+      <Link to="/" style={linkStyle}>#Home</Link >
+      <a href="#">#Snack Fest</a>      
+      <Link to="/displayproduce" style={linkStyle}>#Produce</Link>
       <a href="#">#FAQ </a>
       <a href="#">#Apply</a>
       <a href="#">#Vendors </a>
