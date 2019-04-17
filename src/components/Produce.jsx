@@ -11,7 +11,16 @@ function Produce(props){
           text-align: center;
           font-family: Allerta;
         }
+        h3{
+          color: #f61c6c;
+          text-transform: uppercase;
+        }
+        li {
+          text-decorator: none;
+          list-style-type: none;
+        
 
+        }
 
 
 
