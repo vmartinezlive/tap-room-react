@@ -14,10 +14,6 @@ function Schedule(props){
           text-align: center;
           font-family: Allerta;
         }
-        h1{
-          font-family: 'Monoton', cursive;
-          color: gold;
-        }
 
       `}</style>
       <h3 style={locationStyles}>{props.day}</h3>

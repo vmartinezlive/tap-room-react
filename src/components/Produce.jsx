@@ -3,32 +3,50 @@ import PropTypes from 'prop-types';
 
 function Produce(props){
 
+
+
   return (
     <div>
       <style jsx>{`
         div {
-          border: 1px dotted yellow;
+          border: 1px dotted white;
           text-align: center;
           font-family: Allerta;
+          max-width: 100vw;
+          // max-height:105vh;
+
         }
         h3{
+          text-align:center;
           color: #f61c6c;
           text-transform: uppercase;
+          font-size: 125%;
         }
-        li {
-          text-decorator: none;
-          list-style-type: none;
+
+        .divStyles {
+          display: flex;
+          flex-flow: row wrap;
+          text-align:center;
+          width: 100%;
+          // background-color: red;
+          justify-content: center;
+          margin: 10px 35px 0 0;
+          border: 1px solid white;
         }
-      `}
+
+        `}
       </style>
       <h3>{props.month}</h3>
-      <ul>
-        {
-          props.selection.map((produce,i)=>{
-            return <li key={i}>{produce}</li>;
-          })
-        }
-      </ul>
+      <div className='divStyles'>
+        <ul>
+          {
+            props.selection.map((produce,i)=>{
+              return <p key={i}>{produce}</p>;
+            })
+          }
+        </ul>
+      </div>
+
     </div>
   );
 }

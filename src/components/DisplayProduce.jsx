@@ -3,6 +3,7 @@ import Produce from './Produce';
 import availableProduce from '../model/seasonalProduce.js';
 
 
+// console.log(availableProduce);
 function DisplayProduce(){
   return(
     <div>
@@ -12,6 +13,7 @@ function DisplayProduce(){
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           grid-gap: 1%;
+          max-width:99vw;
         }
         `}
       </style>

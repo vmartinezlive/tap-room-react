@@ -42,6 +42,10 @@ function Links() {
 
           }
 
+          a:hover{
+            color: #42e8de;
+          }
+
 				`}</style>
       <Link to="/" style={linkStyle}>#Home</Link >
       <a href="#">#Snack Fest</a>      
