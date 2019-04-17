@@ -1,15 +1,17 @@
 import React from 'react';
-
+import bridge from '../assets/images/bridge.jpg';
 function Img(){
 
 
   return(
     <div>
       <style jsx> {`
-				<img src="assets/img/bridge.jpg" alt="bridge">
-				</img>
+          width: 100vw;
+          height: auto;
 			`}
       </style>
+      <img src={bridge} alt="bridge"></img>
+
     </div>
   );
 }

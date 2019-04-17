@@ -16,8 +16,8 @@ function Icon(){
 						padding-left: 5px;
 					}
 			`}</style>
-    <i className="fab fa-facebook-f fa-3x"></i>
-    <i className="fab fa-instagram fa-3x"></i>
+      <i className="fab fa-facebook-f fa-3x"></i>
+      <i className="fab fa-instagram fa-3x"></i>
     </div>
   );
 }

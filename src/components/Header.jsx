@@ -26,13 +26,13 @@ function Header(){
           flex-direction: column;
         }
      `}</style>
+      <Links/>
+      <Icon/>
       <h1>Portland</h1>
       <div className="nightMarket">
         <h4>Night</h4>
         <h4>Market</h4>
       </div>
-      <Links/>
-      <Icon/>
 
     </div>
   );

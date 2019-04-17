@@ -32,27 +32,15 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(png|gif|jp(e*)g|svg)$/,
-        use: {
-          loader: 'url-loader',
-          options: {
-            limit: 8000,
-            name: 'images/[hash]-[name].[ext]'
-          }
-        }
-      },
-      {
-        test: /\.(jpe?g|png|gif|svg)$/i,
-        use: [
-          {
-            loader: 'file-loader',
+          test: /\.(png|gif|jp(e*)g|svg)$/i,
+          use: {
+            loader: 'url-loader',
             options: {
-              name: '[name].[ext]',
-              outputPath: 'assets/img'
+              limit: 8000,
+              name: 'images/[hash]-[name].[ext]'
             }
           }
-        ]
-      },
+        },
       {
         test: /\.jsx?$/,
         enforce: "pre",
