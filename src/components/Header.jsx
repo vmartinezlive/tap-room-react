@@ -31,7 +31,7 @@ function Header(){
           margin-left: 1.2rem;
         }
         h4 {
-          letter-spacing: .2rem;
+          letter-spacing:.2rem;
           font-size: 2.5rem;
           margin-bottom: 0;
         }
