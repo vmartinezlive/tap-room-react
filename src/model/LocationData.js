@@ -1,4 +1,4 @@
-export const MarketSchedule = [
+const MarketSchedule = [
   {
     day: 'Sunday',
     location: 'Lents International',
@@ -36,3 +36,5 @@ export const MarketSchedule = [
     booth: '9G'
   }
 ];
+
+export default MarketSchedule;

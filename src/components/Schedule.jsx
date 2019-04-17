@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Ticket(props){
+function Schedule(props){
 
   let locationStyles = {
     textTransform: 'uppercase'
@@ -28,11 +28,11 @@ function Ticket(props){
   );
 }
 
-Ticket.propTypes = {
+Schedule.propTypes = {
   day: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   hours: PropTypes.string.isRequired,
   booth: PropTypes.string
 };
 
-export default Ticket;
+export default Schedule;

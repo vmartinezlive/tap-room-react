@@ -1,5 +1,5 @@
 import React from 'react';
-import TicketList from './TicketList';
+import DisplaySchedule from './DisplaySchedule';
 import Img from './Img';
 
 function Body(){
@@ -13,7 +13,7 @@ function Body(){
       </style>
 
       <Img/>
-      <TicketList/>
+      <DisplaySchedule/>
     </div>
   );
 }
