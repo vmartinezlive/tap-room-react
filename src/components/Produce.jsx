@@ -22,6 +22,7 @@ function Produce(props){
           text-transform: uppercase;
           font-size: 125%;
         }
+
         .divStyles {
           display: flex;
           flex-flow: row wrap;
@@ -45,6 +46,7 @@ function Produce(props){
           }
         </ul>
       </div>
+
     </div>
   );
 }
