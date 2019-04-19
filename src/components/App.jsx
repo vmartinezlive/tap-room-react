@@ -18,6 +18,7 @@ function App(){
   
         `}</style>
       <Header/>
+      <Body/>
 
 
       <Footer/>

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Image from './Image';
 
 
 function Body(){
@@ -10,7 +10,7 @@ function Body(){
 			`}
 
       </style>
-
+      <Image/>
   
     </div>
   );
