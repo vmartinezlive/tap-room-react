@@ -1,7 +1,7 @@
 {
-  "name": "FarmersMeet",
+  "name": "Tap-room-react",
   "version": "1.0.0",
-  "description": "This is a website remake of Portland Night Market",
+  "description": "This is a website remake Tap Room in React",
   "main": "index.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,7 +17,7 @@
     "react",
     "template"
   ],
-  "author": "Isaac, Victoria, Dino",
+  "author": "Victoria",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/IsaacCDHall/react-template/issues"

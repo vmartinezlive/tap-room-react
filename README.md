@@ -1,15 +1,13 @@
-# _Farmers Market _
+# _Tap Room React _
 
-#### Clone copy of Portland Night Market 
+#### Tap in React version 
 
-#### By _**Victoria Martinez, Isaac Hall, and Dino Nguyen**_
+#### By _**Victoria Martinez**_
 
 ## Description
 
-_A cloned version of Portland Night Market with a few changes to make site have better design aesthetic, usability, interactivity_
+_A recreation of Tap Room site in React_
 
-### Original Site 
-![](src\assets\images\portland-nightMarket.jpg)
 
 ## Setup/Installation Requirements
 
