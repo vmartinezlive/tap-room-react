@@ -1,19 +1,16 @@
 import React from 'react';
 import Links from './Links';
-// import logo from '../assets/images/eight-bridges.gif';
+
 
 function Header(){
   return (
-    <div>
-    
+    <div>    
       <style jsx>{`
-    
+        background-color: black; 
 			`}
       </style>
-      
       <Links/>
-    
-     </div> 
+    </div>
    );
 }
 

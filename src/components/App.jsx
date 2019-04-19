@@ -15,13 +15,15 @@ function App(){
   return (
     <div>
       <style jsx global>{`
+    
+        
   
         `}</style>
+    
       <Header/>
       <Body/>
-
-
       <Footer/>
+      
     </div>
   );
 }
