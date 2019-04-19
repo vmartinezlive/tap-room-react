@@ -11,7 +11,7 @@ function Header(){
       </style>
       <Links/>
     </div>
-   );
+  );
 }
 
 export default Header;

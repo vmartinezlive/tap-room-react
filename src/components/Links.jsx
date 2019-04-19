@@ -11,10 +11,10 @@ function Links(){
         text-align: center; 
       
      `} 
-     </style>
+      </style>
       
-       <a href="#">Call Us Today! 925-961-9160 |  </a>
-       <a href="#">info@8bridgesbrewing.com</a>
+      <a href="#">Call Us Today! 925-961-9160 |  </a>
+      <a href="#">info@8bridgesbrewing.com</a>
       
     </div>
   );

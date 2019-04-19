@@ -2,6 +2,7 @@ import React from 'react';
 import Image from './Image';
 
 
+
 function Body(){
   return (
     <div>
@@ -16,11 +17,18 @@ function Body(){
           border: 1px solid white;
           color: white;
         }
+        img{
+          position:absolute;
+          z-index: 1; 
+        }
 			`}
 
       </style>
       <Image/>
-      <h2> It's all about the BEER!</h2>
+      <h2> It's all about the beer!</h2>
+      <img src="./assets/images/eight-bridges.png" alt="logo"></img>
+  
+      
   
     </div>
   );

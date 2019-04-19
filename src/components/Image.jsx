@@ -1,7 +1,6 @@
 import React from 'react';
-import beer from '../assets/images/beer.gif';
 import background from '../assets/images/woodback.jpg';
-  // <img src="./assets/images/woodback.jpg" alt="barrel background">
+
 
 
 function Img(){
@@ -34,8 +33,8 @@ function Img(){
     
 			`}
       </style>
-        <img src={background} alt="background"></img>
-        <h2> It's all about the BEER!</h2>   
+      <img src={background} alt="background"></img>
+      <h2> It's all about the BEER!</h2>   
          
     </div>
   );

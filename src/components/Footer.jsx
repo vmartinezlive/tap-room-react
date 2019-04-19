@@ -11,7 +11,7 @@ function Footer(){
         height: 10vh; 
   
      `}</style>
-     <Links/>
+      <Links/>
 
     </div>
   );
