@@ -22,10 +22,10 @@ function Navbar(){
         }
       `}
       </style>  
-          <a className="kegs" href="#">Kegs</a>
-          <a className="form"href="#">Form</a>  
+      <a className="kegs" href="#">Kegs</a>
+      <a className="form"href="#">Form</a>  
     </div>
   );
-};
+}
 
 export default Navbar;

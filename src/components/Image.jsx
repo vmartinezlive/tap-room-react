@@ -1,10 +1,7 @@
 import React from 'react';
 import background from '../assets/images/woodback.jpg';
 
-
-
 function Img(){
-
 
   return(
     <div>

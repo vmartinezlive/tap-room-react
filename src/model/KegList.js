@@ -46,7 +46,7 @@ const KegList = [
     style: 'IPA',
     origin: 'American',
     alcohol: '6%',
-  }
+  },
   {
     name: 'Not Your Fathers Fruit Beer ', 
     style: 'Belgian Quad',
