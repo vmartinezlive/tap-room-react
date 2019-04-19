@@ -1,4 +1,5 @@
 import React from 'react';
+import Links from './Links';
 // import logo from '../assets/images/eight-bridges.gif';
 
 function Header(){
@@ -6,16 +7,10 @@ function Header(){
     <div>
     
       <style jsx>{`
-        height: 10vh;
-          border: 1px solid red; 
-          img {
-          display: block; 
-          margin-left: auto;
-          margin-right: auto 
-          }
+    
 			`}
       </style>
-      <img src={logo} alt="logo">
+      
       <Links/>
     
      </div> 
