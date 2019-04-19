@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from './Image';
-import logo from "../assets/images/eight-bridges.png";
-import navbar from ".Navbar";
+import logo from '../assets/images/eight-bridges.png';
+import Navbar from './Navbar';
 
 
 
@@ -29,6 +29,7 @@ function Body(){
 
       </style>
       <Image/>
+      <Navbar/>
       <h2> It's all about the beer!</h2>
       <img src={logo} alt="logo"></img>
   

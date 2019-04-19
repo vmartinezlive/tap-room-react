@@ -4,10 +4,38 @@ function Navbar(){
   
   return(
     <div>
-      <a href="#">Kegs</a>
-      <a href="#">Form</a>
+      <style jsx> {`
+        z-index: 1; 
+        color: white; 
+        position: absolute;
+        top: 5vh; 
+        font-wight: lighter
+        font-family: Vidaloka;
+        margin-left: 10rem; 
+        
+        // color: white; 
+          text-transform: uppercase; 
+          display: row flex;
+          justify-content: space-around; 
+          .kegs{
+              color: white;
+              margin-right: 5rem; 
+              margin-left: 5rem; 
+          }
+          .form{
+              color: white;
+          }
+          
+         
+      
+      `}
+      </style>
+      
+          <a className="kegs" href="#">Kegs</a>
+          <a className="form"href="#">Form</a>
+    
     </div>
   );
-}
+};
 
 export default Navbar;
