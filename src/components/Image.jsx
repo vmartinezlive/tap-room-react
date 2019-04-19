@@ -1,5 +1,5 @@
 import React from 'react';
-import beer from'../assets/images/beer.gif';
+import beer from '../assets/images/beer.gif';
 
 function Img(){
 

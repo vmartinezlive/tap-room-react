@@ -1,27 +1,26 @@
 import React from 'react';
-// import eightBridges from '../assets/images/eight-bridges.png';
-
-
+// import logo from '../assets/images/eight-bridges.gif';
 
 function Header(){
   return (
     <div>
+    
       <style jsx>{`
-        
-        height: 5vh;
-        border: 1px solid red; 
-         
-        
+        height: 10vh;
+          border: 1px solid red; 
+          img {
+          display: block; 
+          margin-left: auto;
+          margin-right: auto 
+          }
+			`}
+      </style>
+      <img src={logo} alt="logo">
+      <Links/>
     
-     `}</style>
-    
-      <div className="logo">
-      // <img src={eightBrdiges} alt="eight-bridges-logo"></img>
-      // <img src="../assets/images/eight" alt="eightBrdiges"></img>
-      </div>
-
-    </div>
-  );
+     </div> 
+   );
 }
 
 export default Header;
+
