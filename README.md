@@ -6,8 +6,10 @@
 
 ## Description
 
-_A recreation of Tap Room site in React_
+_A recreation of Tap Room class Angular project done in React_
 
+## Project Structure 
+![](src\assets\images\tap-room-root-structure.jpg)
 
 ## Setup/Installation Requirements
 
