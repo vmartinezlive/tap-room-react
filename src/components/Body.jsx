@@ -1,5 +1,7 @@
 import React from 'react';
 import Image from './Image';
+import logo from "../assets/images/eight-bridges.png";
+import navbar from ".Navbar";
 
 
 
@@ -10,7 +12,7 @@ function Body(){
         h2{
           position: absolute;
           left: 50vw;
-          top: 50vh;
+          top: 65vh;
           z-index: -2;
           width: 20vw; 
           height: auto; 
@@ -20,15 +22,15 @@ function Body(){
         img{
           position:absolute;
           z-index: 1; 
+          top: 45vh; 
+          left: 40vw; 
         }
 			`}
 
       </style>
       <Image/>
       <h2> It's all about the beer!</h2>
-      <img src="./assets/images/eight-bridges.png" alt="logo"></img>
-  
-      
+      <img src={logo} alt="logo"></img>
   
     </div>
   );
