@@ -30,12 +30,10 @@ function Img(){
             font-family: 'Vidaloka', serif;
             letter-spacing: 0.1em;
           }
-    
 			`}
       </style>
       <img src={background} alt="background"></img>
       <h2> It's all about the BEER!</h2>   
-         
     </div>
   );
 }

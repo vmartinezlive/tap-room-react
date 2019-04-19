@@ -12,28 +12,18 @@ function Navbar(){
         font-wight: lighter
         font-family: Vidaloka;
         margin-left: 10rem; 
-        
-        // color: white; 
-          text-transform: uppercase; 
-          display: row flex;
-          justify-content: space-around; 
-          .kegs{
-              color: white;
-              margin-right: 5rem; 
-              margin-left: 5rem; 
-          }
-          .form{
-              color: white;
-          }
-          
-         
-      
+        color: white; 
+        text-transform: uppercase; 
+        display: row flex;
+        justify-content: space-around; 
+        .kegs{
+          margin-right: 5rem; 
+          margin-left: 5rem; 
+        }
       `}
-      </style>
-      
+      </style>  
           <a className="kegs" href="#">Kegs</a>
-          <a className="form"href="#">Form</a>
-    
+          <a className="form"href="#">Form</a>  
     </div>
   );
 };
