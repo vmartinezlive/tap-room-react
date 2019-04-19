@@ -9,6 +9,8 @@
 _A recreation of Tap Room class Angular project done in React_
 
 ## Project Structure 
+![](src\assets\images\tap-room-component.jpg)
+
 ![](src\assets\images\tap-room-root-structure.jpg)
 
 ## Setup/Installation Requirements
