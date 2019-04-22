@@ -15,7 +15,7 @@ function DisplayKegs(){
           }
           `}
       </style>
-      {KegList.map((Keg, index) =>
+      {KegList.map((keg, index) =>
         <Keg name={keg.name}
           style={keg.style}
           origin={keg.origin}
