@@ -1,4 +1,6 @@
 import React from 'react';
+import ConfirmationQuestion from'./ConfirmationQuestion';
+import NewKegForm extends './NewKegForm';
 
 class NewKegControl extends React.Component {
   
@@ -7,19 +9,24 @@ class NewKegControl extends React.Component {
       this.state = {
         formVisbleOnPage: false
       };
-      this.handleClick = this handleClick.bind(this);
+      // this.handleClick = this handleClick.bind(this);
     }
-    
-    handleClick(){
-      this.setState({formVisibleOnPage: true});
-      console.log('formVisibleOnPage is currently set to:' + this.state.formVisibleOnPage);
-    }
+    // 
+    // handleClick(){
+    //   this.setState({formVisibleOnPage: true});
+    //   console.log('formVisibleOnPage is currently set to:' + this.state.formVisibleOnPage);
+    // }
     
   render(){
+    let currentlyVisibleContent = null;
+    if (this.state.formVisbleOnPage){
+      currentlyVisibleContent = <NewKegForm />;
+    } else {
+      currentlyVisibleContent = <ConfirmationQuestions />;  
+    }
     return(
       <div>
-        <p>This is the NewKegControl component!</p>
-        <strong onLCick={this.handleClick}>Click me to change my state<strong
+      <ConfirmationQuestion/>
       </div>
     );
   }
