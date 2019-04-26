@@ -2,10 +2,9 @@ import React from 'react';
 import Body from './Body';
 import Header from './Header';
 import Footer from './Footer';
-import { Switch, Route } from 'react-router-dom';
+import NewKegControl from './NewKegControl';
 import Error404 from './Error404';
-
-
+import { Switch, Route } from 'react-router-dom';
 
 function App(){
   return (
