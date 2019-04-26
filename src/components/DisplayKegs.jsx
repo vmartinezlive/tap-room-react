@@ -9,7 +9,7 @@ function DisplayKegs(){
         div{
             padding:10px;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             grid-gap: 1%;
             max-width:99vw;
           }

@@ -7,7 +7,7 @@ function Img(){
     <div>
       <style jsx> {`
           width: 100%;
-          height: 80vh;
+          height: 55vh;
           img{
             display: block;
             z-index: -2;
