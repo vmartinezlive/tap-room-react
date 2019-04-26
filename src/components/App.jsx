@@ -18,7 +18,7 @@ function App(){
       <Header/>
       <Switch>
         <Route exact path='/' component={Body} />
-        <Route path='newKeg' component="{NewKegForm}" />
+        <Route path='newKeg' component="{NewKegControl}" />
         <Route component={Error404} />
       </Switch>
       <Body/>
