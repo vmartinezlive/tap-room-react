@@ -9,6 +9,7 @@ function Header(){
         background-color: black; 
 			`}
       </style>
+      
       <Links/>
     </div>
   );
