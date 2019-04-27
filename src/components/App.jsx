@@ -3,8 +3,8 @@ import Header from './Header';
 import Body from './Body';
 import KegList from '../model/KegList';
 import Footer from './Footer';
-import NewKegControl from './NewKegControl';
-// import Error404 from './Error404';
+// import NewKegControl from './NewKegControl';
+
 import { Switch, Route } from 'react-router-dom';
 
 
@@ -38,7 +38,7 @@ render(){
       <Switch>
         <Route exact path='/' component={Body} />
         <Route path='newKeg' component="{NewKegControl}" />
-        <Route component={Error404} />
+
       </Switch>
       <Body/>
       <Footer/>

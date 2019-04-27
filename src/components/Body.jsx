@@ -3,7 +3,7 @@ import Image from './Image';
 import logo from '../assets/images/RedLogo.png';
 import Navbar from './Navbar';
 import DisplayKegs from './DisplayKegs';
-import KegList from '../model/KegList';
+// import KegList from '../model/KegList';
 
 
 function Body(){
