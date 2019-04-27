@@ -2,11 +2,10 @@ import React from 'react';
 import Image from './Image';
 import logo from '../assets/images/RedLogo.png';
 import Navbar from './Navbar';
-import DisplayKegs from './DisplayKegs';
-import KegList from '../model/KegList';
+import displayKegs from './DisplayKegs';
 
 
-function Body(){
+function Body(props){
   return (
     <div>
       <style jsx>{`
@@ -50,7 +49,7 @@ function Body(){
       </style>
       <Image/>
       <Navbar/>
-      <DisplayKegs/>
+      <DisplayKegs kegList={props.kegList} />
       <h2>
         <span className="char1">L</span>
         <span className="char2">I</span>
@@ -71,7 +70,6 @@ function Body(){
         <span className="char17">L</span>
       </h2>
       <img src={logo} alt="logo"></img>
-
     </div>
   );
 }

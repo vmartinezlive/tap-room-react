@@ -12,7 +12,7 @@ function ConfirmationQuestion(props){
   );
 }
 
-ConfirmationQuestion.PropTypes = {
+ConfirmationQuestion.propTypes = {
   onFormSubmission: PropTypes.func
 };
 

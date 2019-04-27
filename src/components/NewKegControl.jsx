@@ -7,26 +7,26 @@ class NewKegControl extends React.Component {
 
   constructor(props) {
     super(props);
-      this.state = {
-        formVisbleOnPage: false
-      };
-      this.handleNewKegFormSubmission = this.handleNewKegFormSubmission.bind(this);
-    }
-    //
-    handleNewKegFormSubmission(){
-      this.setState({formVisibleOnPage: true});
-    }
+    this.state = {
+      formVisbleOnPage: false
+    };
+    this.handleNewKegFormSubmission = this.handleNewKegFormSubmission.bind(this);
+  }
+  //
+  handleNewKegFormSubmission(){
+    this.setState({formVisibleOnPage: true});
+  }
 
   render(){
     let currentlyVisibleContent = null;
     if (this.state.formVisbleOnPage){
       currentlyVisibleContent = <NewKegForm  onNewKegCreation={this.props.onNewKegCreation}/>;
     } else {
-      currentlyVisibleContent = <ConfirmationQuestions onFormSubmission={this.handleNewKegFormSubmission} />;
+      currentlyVisibleContent = <ConfirmationQuestion onFormSubmission={this.handleNewKegFormSubmission} />;
     }
     return(
       <div>
-      <currentlyVisibleContent/>
+        <currentlyVisibleContent/>
       </div>
     );
   }
@@ -34,6 +34,6 @@ class NewKegControl extends React.Component {
 
 NewKegControl.propTypes = {
   onNewKegCreation: PropTypes.func
-}
+};
 
 export default NewKegControl;
