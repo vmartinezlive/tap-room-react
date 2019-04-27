@@ -1,9 +1,12 @@
 import React from 'react';
-import Header from './Header';
 import Body from './Body';
-import KegList from '../model/KegList';
+import Header from './Header';
 import Footer from './Footer';
-// import NewKegControl from './NewKegControl';
+
+import KegList from '../model/KegList';
+import DisplayKegs from './DisplayKegs';
+import About from './About';
+import NewKegControl from './NewKegControl';
 
 import { Switch, Route } from 'react-router-dom';
 
@@ -13,26 +16,29 @@ class App extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      KegList: KegList,
+      kegList: kegList,
     };
-this.handleAddingNewKegForm = this.handleAddingNewKegForm.bind(this);
+    this.handleAddingNewKegForm = this.handleAddingNewKegForm.bind(this);
   }
 
   handleAddingNewKegForm(newKeg){
     let newKegList = this.state.KegList.slice();
     newKegList.push(newKeg);
-    this.setState({KegList: newKegList});
+    this.setState({kegList: newKegList});
   }
-render(){
-  return (
-    <div>
-      <style jsx global>{`
+
+
+  render(){
+    return (
+      <div>
+        <style jsx global>{`
         body {
           background-color: #FFF3E2'
           margin: 0;
           padding: 0;
         }
         `}</style>
+
 
       <Header/>
       <Switch>
@@ -43,6 +49,7 @@ render(){
       <Body/>
       <Footer/>
     </div>
+
     );
   }
 }

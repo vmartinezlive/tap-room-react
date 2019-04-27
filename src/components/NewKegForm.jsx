@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { v4 } from 'uuid';
 
 function NewKegForm(props){
   let _name = null;
@@ -9,7 +10,7 @@ function NewKegForm(props){
 
   function handleNewKegFormSubmission(event)  {
     event.preventDefault();
-    props.onNewKegCreation({name: _name.value, style: _style.value, origin: _origin.val, alcohol: _alcohol.val});
+    props.onNewKegCreation({name: _name.value, style: _style.value, origin: _origin.val, alcohol: _alcohol.val, id: v4()});
 
     _name.val ='';
     _style.val = '';

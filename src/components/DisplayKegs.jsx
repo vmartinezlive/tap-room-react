@@ -1,8 +1,9 @@
 import React from 'react';
 import Keg from './Keg';
 import KegList from '../model/KegList.js';
+import PropTypes from 'prop-types';
 
-function DisplayKegs(){
+function DisplayKegs(props){
   return(
     <div>
       <style jsx>{`
@@ -15,15 +16,19 @@ function DisplayKegs(){
           }
           `}
       </style>
-      {KegList.map((keg, index) =>
+      {props.kegList.map((keg) =>
         <Keg name={keg.name}
           style={keg.style}
           origin={keg.origin}
           alcohol={keg.alcohol}
-          key={index}/>
+          key={keg.id}/>
       )}
     </div>
   );
 }
+
+KegList.propTypes = {
+  kegList: PropTypes.array
+};
 
 export default DisplayKegs;

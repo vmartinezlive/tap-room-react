@@ -2,18 +2,20 @@ import React from 'react';
 import Image from './Image';
 import logo from '../assets/images/RedLogo.png';
 import Navbar from './Navbar';
+
 import DisplayKegs from './DisplayKegs';
 // import KegList from '../model/KegList';
 
 
-function Body(){
+
+function Body(props){
   return (
     <div>
       <style jsx>{`
         img{
           position:absolute;
           z-index: 1;
-          top: 5vh;
+          top: 15vh;
           left: 18vw;
           width: 60%;
         }
@@ -23,7 +25,7 @@ function Body(){
           position: absolute;
           width: 20px;
           left: 47vw;
-          top: 15vh;
+          top: 5vh;
           transform-origin: bottom center;
           color: white;
         }
@@ -50,7 +52,7 @@ function Body(){
       </style>
       <Image/>
       <Navbar/>
-      <DisplayKegs/>
+      <DisplayKegs kegList={props.kegList} />
       <h2>
         <span className="char1">L</span>
         <span className="char2">I</span>
@@ -71,7 +73,6 @@ function Body(){
         <span className="char17">L</span>
       </h2>
       <img src={logo} alt="logo"></img>
-
     </div>
   );
 }
