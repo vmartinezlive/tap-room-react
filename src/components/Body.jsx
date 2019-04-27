@@ -13,7 +13,7 @@ function Body(){
         img{
           position:absolute;
           z-index: 1;
-          top: 5vh;
+          top: 15vh;
           left: 18vw;
           width: 60%;
         }
@@ -23,7 +23,7 @@ function Body(){
           position: absolute;
           width: 20px;
           left: 47vw;
-          top: 15vh;
+          top: 5vh;
           transform-origin: bottom center;
           color: white;
         }
