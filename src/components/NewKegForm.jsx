@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
 
+//change this form to a class base since we are storing local data 
 function NewKegForm(props){
   let _name = null;
   let _style = null;

@@ -27,8 +27,8 @@ function DisplayKegs(props){
   );
 }
 
-KegList.propTypes = {
-  kegList: PropTypes.array
-};
+// KegList.propTypes = {
+//   kegList: PropTypes.array
+// };
 
 export default DisplayKegs;

@@ -1,13 +1,13 @@
 import React from 'react';
-import Body from './Body';
+import Image from 'react; '
+// import Body from './Body';
 import Header from './Header';
+import Navbar from './Navbar';
 import Footer from './Footer';
-
 import KegList from '../model/KegList';
 import DisplayKegs from './DisplayKegs';
 import About from './About';
 import NewKegControl from './NewKegControl';
-
 import { Switch, Route } from 'react-router-dom';
 
 
@@ -40,15 +40,19 @@ class App extends React.Component{
         `}</style>
 
 
-      <Header/>
-      <Switch>
-        <Route exact path='/' component={Body} />
-        <Route path='newKeg' component="{NewKegControl}" />
+        <Header/>
+          <img src={logo} alt="logo"></img
+        <Switch>
+          <Route exact path='/' component={Body} />
+          <Route path='newKeg' component="{NewKegControl}" />
 
-      </Switch>
-      <Body/>
-      <Footer/>
-    </div>
+        </Switch>
+        <Image/>
+        <Navbar/>
+        <DisplayKegs kegList={props.kegList} />
+
+        <Footer/>
+      </div>
 
     );
   }
