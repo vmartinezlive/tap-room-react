@@ -1,18 +1,18 @@
 import React from 'react';
-import Image from 'react; '
-// import Body from './Body';
+import Image from 'react';
 import Header from './Header';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import KegList from '../model/KegList';
+import NewKegControl from './NewKegControl';
+import kegList from '../model/KegData';
 import DisplayKegs from './DisplayKegs';
 import About from './About';
-import NewKegControl from './NewKegControl';
 import { Switch, Route } from 'react-router-dom';
+// import PropTypes from 'prop-types';
 
 
 class App extends React.Component{
-
+  
   constructor(props){
     super(props);
     this.state = {
@@ -22,11 +22,10 @@ class App extends React.Component{
   }
 
   handleAddingNewKegForm(newKeg){
-    let newKegList = this.state.KegList.slice();
+    let newKegList = this.state.kegList.slice();
     newKegList.push(newKeg);
     this.setState({kegList: newKegList});
   }
-
 
   render(){
     return (
@@ -38,19 +37,14 @@ class App extends React.Component{
           padding: 0;
         }
         `}</style>
-
-
         <Header/>
-          <img src={logo} alt="logo"></img
         <Switch>
-          <Route exact path='/' component={Body} />
-          <Route path='newKeg' component="{NewKegControl}" />
-
+          <Route exact path ='/' render={() =><DisplayKegs keglist={this.state.keglist} />} /> />
+          <Route exact path = '/newkegontrol'render={() =><NewKegControl  onNewKegCreation={this.handleAddingNewKegForm}/>} />
         </Switch>
         <Image/>
         <Navbar/>
-        <DisplayKegs kegList={props.kegList} />
-
+        <About/>
         <Footer/>
       </div>
 

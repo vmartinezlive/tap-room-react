@@ -13,6 +13,7 @@ class NewKegControl extends React.Component {
     this.handleNewKegFormSubmission = this.handleNewKegFormSubmission.bind(this);
   }
   //
+
   handleNewKegFormSubmission(){
     this.setState({formVisibleOnPage: true});
   }
@@ -20,13 +21,13 @@ class NewKegControl extends React.Component {
   render(){
     let currentlyVisibleContent = null;
     if (this.state.formVisbleOnPage){
-      currentlyVisibleContent = <NewKegForm  onNewKegCreation={this.props.onNewKegCreation}/>;
+      currentlyVisibleContent = <NewKegForm  onNewKegCreation={this.props.onNewKegCreation} />;
     } else {
       currentlyVisibleContent = <ConfirmationQuestion onFormSubmission={this.handleNewKegFormSubmission} />;
     }
     return(
       <div>
-        <currentlyVisibleContent/>
+        {currentlyVisibleContent}
       </div>
     );
   }
