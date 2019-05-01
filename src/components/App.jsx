@@ -1,5 +1,5 @@
-import React from 'react';
-import Image from 'react';
+import React, { Component } from 'react';
+import Image from './Image';
 import Header from './Header';
 import Navbar from './Navbar';
 import Footer from './Footer';
@@ -11,8 +11,8 @@ import { Switch, Route } from 'react-router-dom';
 // import PropTypes from 'prop-types';
 
 
-class App extends React.Component{
-  
+class App extends Component{
+
   constructor(props){
     super(props);
     this.state = {
@@ -39,7 +39,7 @@ class App extends React.Component{
         `}</style>
         <Header/>
         <Switch>
-          <Route exact path ='/' render={() =><DisplayKegs keglist={this.state.keglist} />} /> />
+          <Route exact path ='/' render={() =><DisplayKegs keglist={this.state.kegList} />} /> />
           <Route exact path = '/newkegontrol'render={() =><NewKegControl  onNewKegCreation={this.handleAddingNewKegForm}/>} />
         </Switch>
         <Image/>
