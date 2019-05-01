@@ -39,7 +39,7 @@ class App extends Component{
         `}</style>
         <Header/>
         <Switch>
-          <Route exact path ='/' render={() =><DisplayKegs keglist={this.state.kegList} />} /> />
+          <Route exact path ='/' render={() =><DisplayKegs keglist={this.state.kegList} />} /> 
           <Route exact path = '/newkegontrol'render={() =><NewKegControl  onNewKegCreation={this.handleAddingNewKegForm}/>} />
         </Switch>
         <Image/>
