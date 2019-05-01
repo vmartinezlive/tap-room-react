@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Navbar from './Navbar';
-import Footer from './Footer';
+
 import NewKegControl from './NewKegControl';
 import kegList from '../model/KegData';
 import DisplayKegs from './DisplayKegs';
@@ -54,7 +54,7 @@ class App extends Component{
           <Route exact path = '/newkegontrol'render={() =><NewKegControl  onNewKegCreation={this.handleAddingNewKegForm}/>} />
         </Switch>
         <Route exact path='/About' component={About} />
-        <Footer/>
+
       </div>
 
     );
