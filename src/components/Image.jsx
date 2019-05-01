@@ -1,5 +1,4 @@
 import React from 'react';
-import background from '../assets/images/woodback.jpg';
 import logo from '../assets/images/RedLogo.png';
 
 function Img(){
@@ -49,7 +48,7 @@ function Img(){
         // .char17 { transform: rotate(90deg); }
 			`}
       </style>
-      <img src={background} alt="background"></img>
+
       <img className="logo" src={logo} alt="logo"></img>
       // <h2>
       //   <span className="char1">L</span>
