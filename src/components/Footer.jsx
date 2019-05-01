@@ -6,9 +6,10 @@ function Footer(){
     <div className="footer">
       <style jsx>{`
        .footer{
-         border: 1px solid red;
+         margin-top: 40px;
          background-color: black;
          height: 10vh;
+
 
          // position:absolute;
          bottom:0;
@@ -18,6 +19,8 @@ function Footer(){
         }
       .icons {
         display: flex;
+        justify-content: space-evenly;
+        padding-top: 0.5em;
       }
       `}</style>
       <div className="icons">
@@ -26,7 +29,6 @@ function Footer(){
        <i className="fab fa-twitter-square"> TWITTER </i>
         <i className="fab fa-youtube-square"> YOUTUBE</i>
      </div>
-     <br/>
       <p> Red truck Beer. All Right Resered</p>
 
     </div>

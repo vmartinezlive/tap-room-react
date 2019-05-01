@@ -6,7 +6,7 @@ import NewKegControl from './NewKegControl';
 import kegList from '../model/KegData';
 import DisplayKegs from './DisplayKegs';
 import logo from '../assets/images/RedLogo.png';
-import background from '../assets/images/woodback.jpg';
+import background from '../assets/images/beer.gif';
 import About from './About';
 import { Switch, Route } from 'react-router-dom';
 // import PropTypes from 'prop-types';

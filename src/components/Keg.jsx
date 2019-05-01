@@ -12,13 +12,15 @@ function Keg(props){
         div {
          border: 2px solid black;
          text-align: center;
-         background-color:#E5E1DA;
+         background-color:#787E80;
          color: #F8F8F4;
+         margin-bottom: 10px;
         }
         h3 {
           font-family: 'Patua One', cursive;
           letter-spacing: 0.2em;
-          color: red;
+          color:#FDFFF2;
+          text-shadow: 1px 1px 2px red;
         }
         h4{
           color: #403F3D;
