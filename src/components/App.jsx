@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Navbar from './Navbar';
-
 import NewKegControl from './NewKegControl';
 import kegList from '../model/KegData';
 import DisplayKegs from './DisplayKegs';

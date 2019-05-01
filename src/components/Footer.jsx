@@ -24,11 +24,11 @@ function Footer(){
       }
       `}</style>
       <div className="icons">
-       <i className="fab fa-facebook-f"> | FACEBOOK</i>
-       <i className="fab fa-instagram"> INSTRAGRAM </i>
-       <i className="fab fa-twitter-square"> TWITTER </i>
+        <i className="fab fa-facebook-f"> | FACEBOOK</i>
+        <i className="fab fa-instagram"> INSTRAGRAM </i>
+        <i className="fab fa-twitter-square"> TWITTER </i>
         <i className="fab fa-youtube-square"> YOUTUBE</i>
-     </div>
+      </div>
       <p> Red truck Beer. All Right Resered</p>
 
     </div>

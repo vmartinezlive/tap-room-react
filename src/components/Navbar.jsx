@@ -4,15 +4,35 @@ import { Link } from 'react-router-dom';
 function Navbar(){
   return (
     <div>
-      <Link to="/" style={{ textDecoration: 'none' }}>
-        <a>Home</a>
-      </Link>
-      <Link to="/about" style={{ textDecoration: 'none' }}>
-        <a>About</a>
-      </Link>
-      <Link to="/newKegForm" style={{ textDecoration: 'none' }}>
-        <a>Admin</a>
-      </Link>
+      <style jsx> {`
+        .links{
+          display: flex;
+          justify-content: space-between;
+          position:absolute;
+          z-index: 1;
+          top: 100vh;
+          left: 20vw;
+          width: 60%;
+          font-family: 'Patua One', cursive;
+          font-size: 2rem;
+          letter-spacing: 0.2em;
+          color:#FDFFF2;
+          text-shadow: 1px 1px 2px red;
+      
+        }
+
+        `} </style>
+      <div className="links">
+        <Link to="/" style={{ textDecoration: 'none' }}>
+          <a>Home</a>
+        </Link>
+        <Link to="/about" style={{ textDecoration: 'none' }}>
+          <a>About</a>
+        </Link>
+        <Link to="/newKegForm" style={{ textDecoration: 'none' }}>
+          <a>Admin</a>
+        </Link>
+      </div>
     </div>
   );
 }
