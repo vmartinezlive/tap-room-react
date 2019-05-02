@@ -23,13 +23,10 @@ function Navbar(){
            color: black;
            text-transform: uppercase;
          }
-  
+
 
         `} </style>
       <div className="links">
-        <Link to="/home" style={{ textDecoration: 'none' }}>
-          <a>Home</a>
-        </Link>
         <Link to="/" style={{ textDecoration: 'none' }}>
           <a>Kegs</a>
         </Link>

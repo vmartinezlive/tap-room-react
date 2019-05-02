@@ -10,7 +10,7 @@ import About from './About';
 import { Switch, Route } from 'react-router-dom';
 import Footer from './Footer';
 import Error404 from './Error404';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 
 class App extends Component{
@@ -48,7 +48,7 @@ class App extends Component{
           left: 18vw;
           width: 60%;
         }
-  
+
 
         `}</style>
         <Header/>
