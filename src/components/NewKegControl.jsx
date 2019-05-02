@@ -8,13 +8,19 @@ class NewKegControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      formVisbleOnPage: false
+      formVisbleOnPage: false,
+      sampleName: " ",
+      sampleStyle: " ",
+      sampleOrigin: " ",
+      sampleAlcohol: " "
     };
+
     this.handleNewKegFormSubmission = this.handleNewKegFormSubmission.bind(this);
   }
 
   handleNewKegFormSubmission(){
     this.setState({formVisibleOnPage: true});
+
   }
 
   render(){

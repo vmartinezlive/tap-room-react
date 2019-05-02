@@ -8,7 +8,7 @@ import DisplayKegs from './DisplayKegs';
 import logo from '../assets/images/RedLogo.png';
 import background from '../assets/images/beer.gif';
 import About from './About';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Link, Route } from 'react-router-dom';
 import Footer from './Footer';
 import Error404 from './Error404';
 import PropTypes from 'prop-types';
