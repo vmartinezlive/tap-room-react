@@ -6,7 +6,7 @@ function About(){
 
   return(
     <div>
-    <style jsx>{`
+      <style jsx>{`
       img{
         width: 50rem;
         height: auto;
@@ -22,9 +22,9 @@ function About(){
         font-family: 'Patua One', cursive;
         letter-spacing: 0.2em;
         color:black;
-        text-shadow: 1px 1px 2px red;
         font-size: 5rem;
-        text-align: center; 
+        text-align: center;
+        background-color: #FDFFF2;
       }
 
       `} </style>

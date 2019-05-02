@@ -20,12 +20,12 @@ function DisplayKegs(){
       `}
       </style>
       <div className="grid">
-        {kegList.map((keg, index) =>
+        {kegList.map((keg) =>
           <Keg name={keg.name}
             style={keg.style}
             origin={keg.origin}
             alcohol={keg.alcohol}
-            key={index}/>
+            key={keg.id}/>
         )}
       </div>
       <Footer/>

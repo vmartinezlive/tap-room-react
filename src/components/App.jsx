@@ -8,6 +8,8 @@ import logo from '../assets/images/RedLogo.png';
 import background from '../assets/images/beer.gif';
 import About from './About';
 import { Switch, Route } from 'react-router-dom';
+
+import Footer from './Footer';
 // import PropTypes from 'prop-types';
 
 
@@ -39,7 +41,7 @@ class App extends Component{
         .logo{
           position:absolute;
           z-index: 1;
-          top: 15vh;
+          top: 13vh;
           left: 18vw;
           width: 60%;
         }
@@ -50,10 +52,10 @@ class App extends Component{
         <Navbar/>
         <Switch>
           <Route exact path ='/' render={() =><DisplayKegs keglist={this.state.kegList} />} />
-          <Route exact path = '/newkegontrol'render={() =><NewKegControl  onNewKegCreation={this.handleAddingNewKegForm}/>} />
+          <Route exact path = '/newkegcontrol'render={() =><NewKegControl  onNewKegCreation={this.handleAddingNewKegForm}/>} />
+          <Route exact path ='/about' component={About} />
+          <Footer/>
         </Switch>
-        <Route exact path='/About' component={About} />
-
       </div>
 
     );

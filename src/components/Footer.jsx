@@ -13,7 +13,7 @@ function Footer(){
 
          // position:absolute;
          bottom:0;
-         width:99%;
+         width:100%;
          color: white;
          text-align: center;
         }
