@@ -29,22 +29,7 @@ function About(){
         background-color: #FDFFF2;
         margin-top: 4rem;
       }
-      // @media only screen and (min-width: 768px) {
-      //  img{
-      //    width: 75%;
-      //    position: relative;
-      //    left: 6rem;
-      //    right: 6rem;
-      //  }
-      //  p {
-      //    width: 75%;
-      //    margin-left: 7rem;
-      //    margin-right: 5rem;
-      //  }
-      //  .redTruck{
-      //    padding-top: 3rem;
-      //  }
-      // }
+
 
       `} </style>
       <h1>This beer taste like I'm not going to work tomorrow.</h1>

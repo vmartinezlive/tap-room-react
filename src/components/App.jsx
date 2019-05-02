@@ -48,12 +48,7 @@ class App extends Component{
           left: 18vw;
           width: 60%;
         }
-        // @media only screen and (min-width: 768px) {
-        //   .logo{
-        //     top: 4vh;
-        //   }
-        //
-        // }
+  
 
         `}</style>
         <Header/>

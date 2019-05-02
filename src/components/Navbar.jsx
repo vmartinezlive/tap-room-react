@@ -23,13 +23,7 @@ function Navbar(){
            color: black;
            text-transform: uppercase;
          }
-         // @media only screen and (min-width: 768px) {
-         //   .links{
-         //     top: 50vh;
-         //   }
-         //
-         //
-         // }
+  
 
         `} </style>
       <div className="links">

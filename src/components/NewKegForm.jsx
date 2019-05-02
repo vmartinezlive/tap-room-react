@@ -32,12 +32,7 @@ function NewKegForm(props){
         input{
           font-size: 1rem;
         }
-        @media only screen and (min-width: 768px) {
-          .atags{
-            display: none;
-          }
 
-        }
         `}
       </style>
       <form onSubmit={handleNewKegFormSubmission}>

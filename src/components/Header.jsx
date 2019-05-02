@@ -20,12 +20,7 @@ function Header(){
         padding-left: 2rem;
         padding-reight:
       }
-      // @media only screen and (min-width: 768px) {
-      //   .atags{
-      //     display: none;
-      //   }
-      //
-      // }
+
 
 
 
