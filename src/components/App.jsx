@@ -9,6 +9,7 @@ import background from '../assets/images/beer.gif';
 import About from './About';
 import { Switch, Route } from 'react-router-dom';
 import Footer from './Footer';
+import Error404 from './Error404';
 // import PropTypes from 'prop-types';
 
 
@@ -63,8 +64,10 @@ class App extends Component{
           <Route exact path ='/' render={() =><DisplayKegs keglist={this.state.kegList} />} />
           <Route exact path = '/newkeg' render={() =><NewKegControl  onNewKegCreation={this.handleAddingNewKegForm}/>} />
           <Route exact path ='/about' component={About} />
-          <Footer/>
+          <Route component={Error404} />
+        <Footer/>
         </Switch>
+
       </div>
 
     );

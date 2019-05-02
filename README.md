@@ -11,8 +11,6 @@ _A recreation of Tap Room class Angular project done in React_
 ## Project Structure
 ![](src\assets\images\component-tree.jpg)
 
-![](src\assets\images\tap-room-root-structure.jpg)
-
 ## React Notes:
 _Difference between Angular and React_
 1. Angular is a complete framework which means it will update the whole tree structure of HTML tags until it reaches the specific item not needs updating.   
@@ -20,11 +18,6 @@ _Difference between Angular and React_
 3. Angular uses two directional data flow where it updates the Real DOM and React uses Virtual DOM and React is only concerned with one -directional data flow.
 4. React only works with "View" of the MVC which means you can choose your own libraries.
 5. React works with JSX and works with inline CSS which means it doesn't work as a string.  Instead they are specified with in an object.
-
-_Issues during development_
-1. 
-
-
 
 ## Setup/Installation Requirements
 

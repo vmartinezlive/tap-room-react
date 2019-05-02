@@ -4,7 +4,7 @@ import beer1 from '../assets/images/beer1.gif';
 
 
 function ConfirmationQuestions(props){
-  console.log("ConfirmationQuestions");
+  console.log('ConfirmationQuestions');
 
   return(
     <div>
