@@ -27,13 +27,29 @@ function About(){
         font-size: 3rem;
         text-align: center;
         background-color: #FDFFF2;
-        margin-top: 4rem; 
+        margin-top: 4rem;
       }
+      // @media only screen and (min-width: 768px) {
+      //  img{
+      //    width: 75%;
+      //    position: relative;
+      //    left: 6rem;
+      //    right: 6rem;
+      //  }
+      //  p {
+      //    width: 75%;
+      //    margin-left: 7rem;
+      //    margin-right: 5rem;
+      //  }
+      //  .redTruck{
+      //    padding-top: 3rem;
+      //  }
+      // }
 
       `} </style>
       <h1>This beer taste like I'm not going to work tomorrow.</h1>
       <img src={truck} alt="red truck"></img>
-      <p>Red Truck Beer is built on the values of a simpler time, when you didn’t need a dictionary to order a drink, when trucks went to work, not the mall. When a handshake was a contract.</p>
+      <p className="redTruck">Red Truck Beer is built on the values of a simpler time, when you didn’t need a dictionary to order a drink, when trucks went to work, not the mall. When a handshake was a contract.</p>
       <p>We make Red Truck to be a reminder of those days, when all you needed for good times was a ride, a few friends, and some cold beers. That’s why we keep our beer simple and brew it honestly and independently, with no preservatives, pasteurization, or shortcuts.</p>
       <p>We may not get to meet everyone who drinks a delicious handcrafted Red Truck, but we think that after enjoying one they’ll know we make them the right way, with honesty and commitment.</p>
       <Footer/>

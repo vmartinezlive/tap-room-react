@@ -2,6 +2,7 @@ import React from 'react';
 import Keg from './Keg';
 import PropTypes from 'prop-types';
 import kegList from '../model/KegData';
+import Footer from './Footer';
 
 
 function DisplayKegs(){
@@ -15,8 +16,7 @@ function DisplayKegs(){
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 1%;
             max-width:99vw;
-
-
+            margin-bottom: 1rem; 
           }
 
       `}
@@ -30,6 +30,7 @@ function DisplayKegs(){
             key={keg.id}/>
         )}
       </div>
+      <Footer/>
     </div>
   );
 }

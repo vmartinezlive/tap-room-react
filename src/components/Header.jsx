@@ -11,8 +11,8 @@ function Header(){
       .atags {
         display: flex;
         justify-content: space-around;
-        margin-right: 8rem;
-        margin-left: 8rem;
+        margin-right: 5rem;
+        margin-left: 3rem;
 
         width: 80%;
         height: 3rem;
@@ -20,6 +20,12 @@ function Header(){
         padding-left: 2rem;
         padding-reight:
       }
+      // @media only screen and (min-width: 768px) {
+      //   .atags{
+      //     display: none;
+      //   }
+      //
+      // }
 
 
 

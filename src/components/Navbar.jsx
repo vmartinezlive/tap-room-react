@@ -23,13 +23,17 @@ function Navbar(){
            color: black;
            text-transform: uppercase;
          }
+         // @media only screen and (min-width: 768px) {
+         //   .links{
+         //     top: 50vh;
+         //   }
+         //
+         //
+         // }
 
         `} </style>
       <div className="links">
         <Link to="/" style={{ textDecoration: 'none' }}>
-          <a>Home</a>
-        </Link>
-        <Link to="/displayKegs" style={{ textDecoration: 'none' }}>
           <a>Kegs</a>
         </Link>
         <Link to="/about" style={{ textDecoration: 'none' }}>

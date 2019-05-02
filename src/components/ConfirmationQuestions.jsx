@@ -4,6 +4,7 @@ import beer1 from '../assets/images/beer1.gif';
 
 
 function ConfirmationQuestions(props){
+  console.log("ConfirmationQuestions");
 
   return(
     <div>
@@ -37,6 +38,7 @@ function ConfirmationQuestions(props){
       <br/>
       <img src={beer1}/>
     </div>
+
   );
 }
 
