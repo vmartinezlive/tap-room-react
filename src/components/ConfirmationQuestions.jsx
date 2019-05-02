@@ -17,7 +17,7 @@ function ConfirmationQuestions(props){
 
       }
     `}</style>
-      <p>Do you want to create a new keg item?</p>
+      <h2>Do you want to create a new keg item?</h2>
       <button onClick={props.onFormSubmission}>Yes</button>
       <img src={beer1}/>
     </div>

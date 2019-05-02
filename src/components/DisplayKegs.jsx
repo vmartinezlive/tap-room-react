@@ -2,7 +2,7 @@ import React from 'react';
 import Keg from './Keg';
 import PropTypes from 'prop-types';
 import kegList from '../model/KegData';
-import Footer from './Footer';
+
 
 function DisplayKegs(){
 
@@ -28,7 +28,6 @@ function DisplayKegs(){
             key={keg.id}/>
         )}
       </div>
-      <Footer/>
     </div>
   );
 }
