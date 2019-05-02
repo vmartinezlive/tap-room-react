@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './Header';
 import Navbar from './Navbar';
 import NewKegControl from './NewKegControl';
+import NewKegForm from './NewKegForm';
 import kegList from '../model/KegData';
 import DisplayKegs from './DisplayKegs';
 import logo from '../assets/images/RedLogo.png';
@@ -60,8 +61,10 @@ class App extends Component{
           <Route exact path = '/newkeg' render={() =><NewKegControl  onNewKegCreation={this.handleAddingNewKegForm}/>} />
           <Route exact path ='/about' component={About} />
           <Route component={Error404} />
-        <Footer/>
+
         </Switch>
+          <Footer/>
+
 
       </div>
 
