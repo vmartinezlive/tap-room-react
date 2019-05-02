@@ -30,8 +30,11 @@ class App extends Component{
 
   render(){
     return (
-      <div>
+      <div className="container">
         <style jsx global>{`
+        .container{
+          background-color: #FDFFF2;
+        }
         .backgroundImg {
           background-size: block;
           width: 100%;

@@ -11,14 +11,30 @@ function ConfirmationQuestions(props){
       * {
         font-family: 'Patua One', cursive;
         text-align: center;
+        background-color: #FDFFF2;
       }
       button {
-        background-color: #FCFD46;
-
+        background-color: #787E80;
+        padding-right: 2em;
+        padding-left: 2em;
+      }
+      img {
+        width: 80vw;
+        height: 80vh;
+      }
+      h2 {
+        margin-top: 4rem;
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: red;
+        text-shadow: 1px 1px 2px black;
       }
     `}</style>
       <h2>Do you want to create a new keg item?</h2>
       <button onClick={props.onFormSubmission}>Yes</button>
+      <br/>
+      <br/>
       <img src={beer1}/>
     </div>
   );

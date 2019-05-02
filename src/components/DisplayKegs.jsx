@@ -15,6 +15,8 @@ function DisplayKegs(){
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 1%;
             max-width:99vw;
+
+
           }
 
       `}
