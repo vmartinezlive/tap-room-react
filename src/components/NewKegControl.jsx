@@ -8,11 +8,11 @@ class NewKegControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      formVisbleOnPage: false,
-      sampleName: " ",
-      sampleStyle: " ",
-      sampleOrigin: " ",
-      sampleAlcohol: " "
+      formVisibleOnPage: false,
+      sampleName: ' ',
+      sampleStyle: ' ',
+      sampleOrigin: ' ',
+      sampleAlcohol: ' '
     };
 
     this.handleNewKegFormSubmission = this.handleNewKegFormSubmission.bind(this);
@@ -20,12 +20,12 @@ class NewKegControl extends React.Component {
 
   handleNewKegFormSubmission(){
     this.setState({formVisibleOnPage: true});
-
+console.log(this.formVisibleOnPage, "hey");
   }
 
   render(){
     let currentlyVisibleContent = null;
-    if (this.state.formVisbleOnPage){
+    if (this.state.formVisibleOnPage){
       currentlyVisibleContent = <NewKegForm  onNewKegCreation={this.props.onNewKegCreation} />;
     } else {
       currentlyVisibleContent = <ConfirmationQuestions onFormSubmission={this.handleNewKegFormSubmission} />;

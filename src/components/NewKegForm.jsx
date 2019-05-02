@@ -9,7 +9,7 @@ function NewKegForm(props){
   let _origin = null;
   let _alcohol = null;
 
-  function handleNewKegFormSubmission(event)  {
+  function handleNewKegCreation(event)  {
     event.preventDefault();
 
     props.onNewKegCreation({name: _name.value, style: _style.value, origin: _origin.val, alcohol: _alcohol.val, id: v4()});
@@ -18,6 +18,7 @@ function NewKegForm(props){
     _style.val = '';
     _origin.val = '';
     _alcohol.val = '';
+
   }
   return(
     <div className="newkegComponent">
@@ -35,8 +36,8 @@ function NewKegForm(props){
 
         `}
       </style>
-      <form onSubmit={handleNewKegFormSubmission}>
-      // console.log("onSubmit");
+      <form onSubmit={handleNewKegCreation}>
+
         <h2>Name of Beer:</h2>
         <input
           type='text'
@@ -62,6 +63,7 @@ function NewKegForm(props){
           ref={(input) => {_alcohol = input;}}
         />
       </form>
+      <button type="submit">Submit</button>
     </div>
   );
 }

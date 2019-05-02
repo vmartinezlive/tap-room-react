@@ -63,7 +63,7 @@ class App extends Component{
           <Route component={Error404} />
 
         </Switch>
-          <Footer/>
+        <Footer/>
 
 
       </div>

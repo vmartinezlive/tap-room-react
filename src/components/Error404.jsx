@@ -11,7 +11,7 @@ function Error404(props){
 
 
   `}
-   </style>
+  </style>;
 
   return(
     <div>
