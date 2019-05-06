@@ -58,7 +58,7 @@ class App extends Component{
         <img className="backgroundImg" src={background} alt="background"></img>
         <Navbar/>
         <Switch>
-          <Route exact path ='/' render={() =><DisplayKegs keglist={this.state.kegList} />} />
+          <Route exact path ='/' render={() =><DisplayKegs kegList={this.state.kegList} />} />
           <Route exact path = '/newkeg' render={() =><NewKegControl  onNewKegCreation={this.handleAddingNewKegForm}/>} />
           <Route exact path ='/about' component={About} />
           <Route component={Error404} />

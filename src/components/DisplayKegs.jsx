@@ -6,8 +6,7 @@ import kegList from '../model/KegData';
 
 
 function DisplayKegs(props){
-var displayKegs = displayKegs.map();
- // var keys = Object.keys();
+
   return (
     <div className="grid">
       <style jsx>{`
@@ -22,7 +21,7 @@ var displayKegs = displayKegs.map();
 
       `}
       </style>
-      {displayKegs.map((keg, index)=>
+      {props.kegList && props.kegList.map((keg, index)=>
         <Keg name={keg.name}
           style={keg.style}
           origin={keg.origin}
@@ -37,7 +36,7 @@ var displayKegs = displayKegs.map();
 
 DisplayKegs.propTypes = {
   kegList: PropTypes.array
-  // kegList: PropTypes.object
+
 };
 
 export default DisplayKegs;
