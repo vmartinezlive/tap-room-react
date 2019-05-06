@@ -9,17 +9,15 @@ function About(){
     <div>
       <style jsx>{`
       img{
-        width: 50rem;
+        position: relative;
+        width: 30rem;
         height: auto;
         float: left;
         padding: 1em;
-
       }
       p {
-
         font-size: 2rem;
         padding-top: 0.5em;
-
       }
       h1{
         font-family: 'Patua One', cursive;
@@ -32,11 +30,7 @@ function About(){
       }
       .endpTag{
         margin-bottom: 8rem;
-
-
       }
-
-
       `} </style>
       <h1>This beer taste like I'm not going to work tomorrow.</h1>
       <img src={truck} alt="red truck"></img>

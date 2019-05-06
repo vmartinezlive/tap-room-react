@@ -1,4 +1,4 @@
-# _Tap Room React _
+# Tap Room React
 
 #### Tap in React version
 

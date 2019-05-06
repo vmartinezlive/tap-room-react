@@ -3,7 +3,7 @@ import Header from './Header';
 import Navbar from './Navbar';
 import NewKegControl from './NewKegControl';
 import NewKegForm from './NewKegForm';
-import kegList from '../model/KegData';
+
 import DisplayKegs from './DisplayKegs';
 import logo from '../assets/images/RedLogo.png';
 import background from '../assets/images/beer.gif';
@@ -125,6 +125,8 @@ class App extends Component{
           left: 18vw;
           width: 60%;
         }
+
+
         `}</style>
         <Header/>
         <img className="logo" src={logo} alt="logo"></img>

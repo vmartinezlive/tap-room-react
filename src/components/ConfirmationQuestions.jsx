@@ -4,7 +4,7 @@ import beer1 from '../assets/images/beer1.gif';
 
 
 function ConfirmationQuestions(props){
-  
+
 
   return(
     <div>
@@ -18,6 +18,7 @@ function ConfirmationQuestions(props){
         background-color: #787E80;
         padding-right: 2em;
         padding-left: 2em;
+        font-size: 1.2rem;
       }
       img {
         width: 80vw;

@@ -9,7 +9,7 @@ function Keg(props){
   function information(){
     props.handleDeleteKeg({
       id: props.id
-    })
+    });
   }
   return(
     <div>
@@ -30,6 +30,10 @@ function Keg(props){
         h4{
           color: #403F3D;
         }
+        button{
+          width: 4rem;
+          margin-bottom: 1rem;
+        }
 
       `}
       </style>
@@ -37,7 +41,7 @@ function Keg(props){
       <h4>{props.style}</h4>
       <h4>{props.origin}</h4>
       <h4>{props.alcohol}</h4>
-      <button onClick={information}></button>
+      <button onClick={information}>Remove</button>
     </div>
   );
 }
@@ -47,6 +51,7 @@ Keg.propTypes = {
   style: PropTypes.string,
   origin: PropTypes.string,
   alcohol: PropTypes.string,
+  id: PropTypes.string,
   handleDeleteKeg: PropTypes.string
 };
 
