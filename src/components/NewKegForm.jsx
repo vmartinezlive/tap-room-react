@@ -38,7 +38,7 @@ function NewKegForm(props){
         `}
       </style>
       <form onSubmit={handleNewKegCreation}>
-        <div className="form">
+
         <h2>Name of Beer:</h2>
         <input
           type='text'
@@ -63,9 +63,8 @@ function NewKegForm(props){
           id='alcohol'
           ref={(input) => {_alcohol = input;}}
         />
+        <button type="submit">Submit</button>
       </form>
-      <button type="submit">Submit</button>
-      </div>
     </div>
   );
 }
