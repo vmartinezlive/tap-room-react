@@ -6,6 +6,11 @@ function Keg(props){
   let kegdisplaystyle = {
     textTransform: 'uppercase'
   };
+  function information(){
+    props.handleDeleteKeg({
+      id: props.id
+    })
+  }
   return(
     <div>
       <style jsx>{`
@@ -32,6 +37,7 @@ function Keg(props){
       <h4>{props.style}</h4>
       <h4>{props.origin}</h4>
       <h4>{props.alcohol}</h4>
+      <button onClick={information}></button>
     </div>
   );
 }
@@ -41,6 +47,7 @@ Keg.propTypes = {
   style: PropTypes.string,
   origin: PropTypes.string,
   alcohol: PropTypes.string,
+  handleDeleteKeg: PropTypes.string
 };
 
 export default Keg;

@@ -1,11 +1,12 @@
 import React from 'react';
 import Keg from './Keg';
 import PropTypes from 'prop-types';
-import kegList from '../model/KegData';
+
 
 
 
 function DisplayKegs(props){
+
 
   return (
     <div className="grid">
@@ -21,13 +22,14 @@ function DisplayKegs(props){
 
       `}
       </style>
-      {props.kegList && props.kegList.map((keg, index)=>
+      {props.kegList.map((keg, index)=>
         <Keg name={keg.name}
           style={keg.style}
           origin={keg.origin}
           alcohol={keg.alcohol}
           id={keg.id}
-          key={index} />
+          key={index}
+          handleDeleteKeg={props.handleDeleteKeg}/>
       )}
 
       </div>
@@ -35,7 +37,8 @@ function DisplayKegs(props){
   }
 
 DisplayKegs.propTypes = {
-  kegList: PropTypes.array
+  kegList: PropTypes.array,
+  handleDeleteKeg: PropTypes.func
 
 };
 

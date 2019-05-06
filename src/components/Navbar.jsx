@@ -20,6 +20,7 @@ function Navbar(){
           // text-shadow: 1px 1px 2px red;
         }
          a {
+           position: relative;
            color: black;
            text-transform: uppercase;
          }
