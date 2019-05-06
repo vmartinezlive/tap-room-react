@@ -28,7 +28,8 @@ function NewKegForm(props){
         }
         h2{
           font-family: 'Patua One', cursive;
-          color:#FDFFF2;
+          color: black;
+          border: 1px solid red;
         }
         input{
           font-size: 1rem;
@@ -37,7 +38,7 @@ function NewKegForm(props){
         `}
       </style>
       <form onSubmit={handleNewKegCreation}>
-
+        <div className="form">
         <h2>Name of Beer:</h2>
         <input
           type='text'
@@ -64,6 +65,7 @@ function NewKegForm(props){
         />
       </form>
       <button type="submit">Submit</button>
+      </div>
     </div>
   );
 }
