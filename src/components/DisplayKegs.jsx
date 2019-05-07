@@ -7,7 +7,6 @@ import PropTypes from 'prop-types';
 
 function DisplayKegs(props){
 
-
   return (
     <div className="grid">
       <style jsx>{`
